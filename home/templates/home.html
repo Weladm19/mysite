@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+    {% load static %}
+    <section class="d-flex justify-content-center align-items-center vh-100 flex-wrap">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center text_home">
+            <h1>Bem Vindo </h1>
+            <p class="p_home">
+                Fiz esse site
+                para apresentar um pouco do meu conhecimento com web espero que goste.
+            </p>
+        </div>
+        <div class="w-100 d-flex justify-content-center align-items-center">
+            <img src="{% static 'img/myphoto.jpg' %}" alt="minha foto" class="img-fluid rounded-cicler img_home" style="width: 350px; height: 350px;">
+        </div>
+    </section>
+{% endblock %}

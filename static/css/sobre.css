@@ -1,0 +1,35 @@
+.sobre_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.box_odd,
+.box_even{
+    display: none;
+}
+
+.box_size{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(231, 240, 240, 0.062);
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.041);
+    height: 700px;
+}
+
+.box_size h1{
+    font-size: 2.2rem;
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 20px;
+}

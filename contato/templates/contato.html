@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+  <section class="container">
+    <h1>Pagina de Contato</h1>
+    <div class="d-flex w-100 justify-content-center flex-wrap h-100">
+        <div class=" w-50 d-flex flex-column justify-content-center align-items-center contato_left">
+            <h3>Meus Contatos</h3>
+            <p>Telefone: (31) 9 9279-3547 (whats)</p>
+            <p>Email: wel.indumill@gmail.com</p>
+        </div>
+        <div class=" w-50 d-flex flex-column justify-content-center align-items-center contato_right">
+            <h3>Me envie sua proposta</h3>
+            <form action="." method="post">
+              {% csrf_token %}
+              {{form.as_p}}
+              <input type="submit" value="Enviar" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+  </section>
+{% endblock content %}
